@@ -1,4 +1,7 @@
 # Introduce
+
+[![Build Status](https://travis-ci.org/XGHeaven/node-env-deploy.svg)](https://travis-ci.org/XGHeaven/node-env-deploy)
+
 You may be coding in local, use yourself mysql , mongodb, etc. But in deploy server, the mysql,mongodb's username and password is different. Usually, username and password pass into program through environment.
 So, this package can auto switch env, if you have a .env file in root of project
 
