@@ -1,0 +1,25 @@
+{
+  "name": "env-deploy",
+  "version": "0.1.0",
+  "description": "auto load .env file if it exist, allow json format, plain env string, and with easier accessible method without using process.env",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/XGHeaven/node-env-deploy.git"
+  },
+  "keywords": [
+    "env",
+    "deploy",
+    "auto",
+    ".env"
+  ],
+  "author": "XGHeaven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XGHeaven/node-env-deploy/issues"
+  },
+  "homepage": "https://github.com/XGHeaven/node-env-deploy#readme"
+}
