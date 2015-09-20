@@ -4,7 +4,7 @@
   "description": "auto load .env file if it exist, allow json format, plain env string, and with easier accessible method without using process.env",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/XGHeaven/node-env-deploy/issues"
   },
-  "homepage": "https://github.com/XGHeaven/node-env-deploy#readme"
+  "homepage": "https://github.com/XGHeaven/node-env-deploy#readme",
+  "devDependencies": {
+    "chai": "^3.2.0"
+  }
 }
