@@ -20,16 +20,20 @@ my project
     * index.js
     * .gitignore
 
-.env, now only support json format
+.env, now only support json format. allow recursive, join with `_`
 
     {
-        "MONGODB": "localhost"
+        "MONGODB": "localhost",
+        "MONGO": {
+            "USER": "root"
+        }
     }
 
-index.js
+index.js - find `.env` file under `__dirname` which pass to it. Or it's' default is `process.cwd()`
 
-    require('env-deploy');
+    require('env-deploy')(__dirname);
     console.log(process.env.MONGODB);
+    console.log(process.env.MONGO_USER);
 
 .gitignore
 
@@ -38,12 +42,15 @@ index.js
 in your local with `.env` file
 
     localhost
+    root
 
-in deploy server without `.env` file, but have environment like `MONGODB=111.111.111.111`
+in deploy server without `.env` file, but have environment like `MONGODB=111.111.111.111;USER=data`
 
     111.111.111.111
+    data
 
 # Thanks
 thanks for your usage, welcome you to pull request to me.
 
 # TODO
+* support key=value format
