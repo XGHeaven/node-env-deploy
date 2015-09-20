@@ -7,5 +7,6 @@ node_js:
   4.1
 install:
   npm install mocha -g
+  npm install
 script:
   npm test
