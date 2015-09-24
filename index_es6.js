@@ -51,7 +51,7 @@ function addToEnv(data, prefix = '') {
         if (typeof value === 'object') {
             addToEnv(value, prefix + key + '_');
         } else {
-            env[key] = value;
+            env[prefix + key] = value;
         }
     }
 }

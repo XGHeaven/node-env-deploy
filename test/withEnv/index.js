@@ -9,8 +9,12 @@ describe('with env', function() {
         var result = require('../../')(__dirname);
         expect(result).to.be.ok;
     });
-    it('check', function() {
+    it('base check', function() {
         expect(process.env.NODE_ENV).to.be.eql('production');
         expect(process.env.MONGODB).to.be.eql('localhost');
+    });
+    it('nested obejct to check', function() {
+        expect(process.env.A_B).to.be.eql('b');
+        expect(process.env.A_C_D).to.be.eql('1');
     });
 });
