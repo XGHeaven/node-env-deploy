@@ -1,6 +1,6 @@
 {
   "name": "env-deploy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "auto load .env file if it exist, allow json format, plain env string, and with easier accessible method without using process.env",
   "main": "index.js",
   "scripts": {
