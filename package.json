@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --recursive",
     "watch": "babel -o index.js index_es6.js -w",
-    "build": "babel -o index.js index_es6.js"
+    "build": "babel --compact true --no-comments -o index.js index_es6.js"
   },
   "repository": {
     "type": "git",
