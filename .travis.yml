@@ -4,6 +4,14 @@ node_js:
   - 0.11
   - 4.0
   - 4.1
+os:
+  - linux
+  - window
+  - osx
+matrix:
+  allow_failures:
+    - os:
+      - window
 install:
   - npm install mocha -g
   - npm install
