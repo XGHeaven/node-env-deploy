@@ -68,6 +68,7 @@ in deploy server without `.env` file, but have environment like `MONGODB=111.111
 
     111.111.111.111
     data
+    27017
 
 ## API
 ### env_deploy
