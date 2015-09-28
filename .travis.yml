@@ -12,6 +12,8 @@ matrix:
   allow_failures:
     - os:
       - window
+      # for travis nvm not found error
+      - osx
 install:
   - npm install mocha -g
   - npm install
