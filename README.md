@@ -42,7 +42,8 @@ MONGO_USER = root
 MONGO_Port = 27017
 ```
 
-> in json format, all value would be save as String even if it's a Number. Such as `typeof MONGO_PORT` return `String`
+> in json format, all value would be save as String even if it's a Number. Such as `typeof MONGO_PORT` return `String`.
+
 > default, all env name will be save as upper case. You can set `autoTransformCase` as false to turn off this.
 
 index.js - find `.env` file under `__dirname` which pass to it. Or it's' default is `process.cwd()`
