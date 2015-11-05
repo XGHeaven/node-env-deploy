@@ -37,6 +37,9 @@ my project
 ```
 or
 ```
+# in this format, two kind of comment is supported
+# one is prefix line with `#`
+// the other is prefix line with `//`
 MONGODB = localhost
 MONGO_USER = root
 MONGO_Port = 27017
