@@ -84,6 +84,10 @@ function parseEnvData(string) {
     let lines = string.split('\n');
 
     lines.forEach(line => {
+        // support comment start with `#` of `//`
+        if (line[0] === '#') { return; }
+        if (line[0] === '/' && line[1] === '/') { return; }
+
         let [all, key, value] = line.match(/^(.+?)=(.+)$/) || [];
 
         // if any of false , ignore it
