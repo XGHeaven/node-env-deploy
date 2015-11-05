@@ -1,10 +1,12 @@
 {
   "name": "env-deploy",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "auto load .env file if it exist, allow json format, plain env string, and with easier accessible method without using process.env",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "mocha --recursive",
+    "watch": "babel -o index.js index_es6.js -w",
+    "build": "babel --compact true --no-comments -o index.js index_es6.js"
   },
   "repository": {
     "type": "git",

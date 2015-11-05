@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 
-describe('withour env', function() {
+describe('without env', function() {
     before('clear env', function() {
         delete process.env.NODE_ENV;
         delete process.env.MONGODB;
