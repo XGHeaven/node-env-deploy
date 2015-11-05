@@ -44,6 +44,10 @@ describe('with env use key=value format', function() {
             ERR: null
         });
     });
+
+    it('comment value', function() {
+        expect(env).to.not.have.key('comment');
+    });
 });
 
 describe('set autoTransformCase to false', function() {
